@@ -7,4 +7,6 @@ psi = sum([c*basis[j] for j,c in enumerate(cs)]) # the state psi
 A = np.array([[1,0,0],[0,2,0],[0,0,3]]) # some operator
 # expectation value of A in state psi
 exp_A = np.real(np.conjugate(psi).T @ A @ psi)
+print(psi)
+print(A)
 print(exp_A)
